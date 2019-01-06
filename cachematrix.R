@@ -21,6 +21,7 @@ cacheSolve <- function(x, ...) {
   i<<-x$getinv()
   if (!is.null(i)) {             #It's in cache
     print("Getting cache")
+    return(i)
   }
   
   dat<-x$get()
